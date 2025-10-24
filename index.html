@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vocal Brutality — Vocal Lessons</title>
+
+    <!-- Font fallback -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="hero">
+            <canvas id="freqLines"></canvas>
+            <canvas id="viz"></canvas>
+
+
+
+            <!-- Parallax logo container -->
+            <div class="hero-content" id="heroContent">
+                <!--<img id="logo" class="logo" src="assets/logo.png" alt="Vocal Brutality logo"
+                    onerror="this.style.display='none'"> -->
+                <div class="logo-glitch-wrapper">
+                    <img id="logo" class="logo" src="assets/logo.png" alt="Vocal Brutality logo"
+                        onerror="this.style.display='none'">
+                </div>
+
+
+
+
+                <h1 class="site-title">Vocal Brutality</h1>
+
+                <div class="hero-cta">
+                    <a class="btn primary" href="#lessons">Browse excersises</a>
+                    <a class="btn" href="https://doodle.com/bp/nickwilschut/book-a-vocal-lesson-with-me" target="_blank"
+                        rel="noopener">Book a Vocal Lesson</a>
+                </div>
+            </div>
+
+            <!-- subtle decorative images used for parallax (tinted in CSS) -->
+            <div class="parallax-img parallax-front" aria-hidden="true"></div>
+            <div class="parallax-img parallax-side" aria-hidden="true"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="head-image-container fade-in">
+            <img src="assets/headimage.png" alt="HeadImage" class="hover-image">
+        </div>
+        <section id="about" class="card section-with-bg section-about slide-in">
+            <h2>About Vocal Brutality</h2>
+            <div class="accent-line"></div>
+            <p class="muted-small"></p>
+            <div class="video-wrap">
+                <iframe src="https://www.youtube.com/embed/TO08XE7R_mI" title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <section id="lessons" class="card section-with-bg section-lessons slide-in">
+
+            <h2>Vocal warmups</h2>
+            <div class="accent-line"></div>
+            <div class="grid">
+                <div class="card">
+                    <h3>"MUM" warmup excersise</h3>
+                    <p class="muted-small">We use the "M" consonant and "UH" vowel for a light yet supported sound.
+                        Voicecracks are totally fine, just make sure not to force this excerise</p>
+                    <audio controls preload="none" src="assets/MUM_Exercise.m4a"></audio>
+                </div>
+
+                <div class="card">
+                    <h3>"NAY" warmup excersise</h3>
+                    <p class="muted-small">We use the "N" consonant and "AY" vowel for a light sound that allows easy
+                        transition into the falsetto range. Voicecracks are totally fine, just make sure not to force
+                        this excerise</p>
+                    <audio controls preload="none" src="assets/NAY_Exercise.m4a"></audio>
+                </div>
+
+                <div class="card">
+                    <h3>"HUNG" placement excersise</h3>
+                    <p class="muted-small">The "NG" sound is a great safe way to explore different placements for
+                        resonace. This helps developing higher screaming ranges.</p>
+                    <audio controls preload="none" src="assets/NG_Exercise.m4a"></audio>
+                </div>
+
+                <div class="card">
+                    <h3>Sign Up</h3>
+                    <p class="muted-small">All warmed up? Time for an actual screaming lesson!</p>
+                    <a class="btn primary" href="https://doodle.com/bp/nickwilschut/book-a-vocal-lesson-with-me"
+                        target="_blank" rel="noopener">Book a Lesson</a>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="headfront-image-container fade-in">
+            <img src="assets/headfront.png" alt="HeadFront" class="hover-image">
+        </div>
+
+        <section id="contact" class="card section-with-bg section-contact slide-in">
+            <h2>Contact</h2>
+            <div class="accent-line"></div>
+            <p class="muted-small">Want to book a lesson, or do you have any questions? Drop a message and we'll reach
+                out!</p>
+
+            <!-- FORMSPREE: replace `yourFormID` with your Formspree form id (e.g. /f/maylqkzd) -->
+            <form id="contactForm" action="https://formspree.io/f/myznvnwk" method="POST">
+                <div class="form-row">
+                    <input id="name" name="name" type="text" placeholder="Your name" required>
+                    <input id="email" name="email" type="email" placeholder="Email address" required>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+
+                    <div class="form-actions">
+                        <button class="btn primary" type="submit">Send</button>
+                        <button class="btn" type="button" id="resetBtn">Reset</button>
+                    </div>
+                    <p class="muted-small">If you prefer, you can also <a class="in-text-link"
+                            href="https://doodle.com/bp/nickwilschut/book-a-vocal-lesson-with-me" target="_blank"
+                            rel="noopener">book directly</a>.</p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        © <span id="year"></span> Vocal Brutality — All rights reserved.
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
