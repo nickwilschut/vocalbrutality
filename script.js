@@ -232,8 +232,8 @@ function drawFreq() {
     const w = freqCanvas.clientWidth;
     const h = freqCanvas.clientHeight;
 
-    fctx.fillStyle = 'rgba(0,0,0,0.15)';
-    fctx.fillRect(0, 0, w, h);
+     fctx.clearRect(0, 0, w, h); // volledig schoonmaken van het canvas
+
 
     const yPositions = [];
     for (let l = 0; l < lineCount; l++) {
