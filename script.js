@@ -209,7 +209,7 @@ resizeFreq();
 
 let freqTime = 0;
 const freqParticles = [];
-const maxFreqParticles = 100;
+const maxFreqParticles = 50;
 const lineCount = 5;
 
 function initFreqParticles() {
